@@ -48,6 +48,10 @@
       <HintPath>..\packages\SC.Sitecore.ContentSearch.8.2.1\lib\Sitecore.ContentSearch.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.ContentSearch.Azure">
+      <HintPath>..\packages\SC.Sitecore.ContentSearch.Azure.8.2.1\lib\Sitecore.ContentSearch.Azure.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sitecore.XA.Foundation.Geospatial">
       <HintPath>..\packages\SXA82.Sitecore.XA.Foundation.Geospatial.1.2.0\lib\Sitecore.XA.Foundation.Geospatial.dll</HintPath>
       <Private>False</Private>
@@ -68,12 +72,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AzureCoordinate.cs" />
-    <Compile Include="CloudSearchTypeMapper.cs" />
+    <Compile Include="CloudIndexFieldStorageValueFormatter.cs" />
     <Compile Include="GeoPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\zzz\Sitecore.Support.7170.config" />
+    <Content Include="App_Config\Include\zzz\Sitecore.Support.7170.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
